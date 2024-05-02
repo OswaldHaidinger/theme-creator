@@ -9,7 +9,7 @@ function App() {
   const [colors, setColors] = useState(initialColors);
 
   function handleAddColor(color) {
-    setColors([{ ...color, id: "UID Pack" }, ...colors]);
+    setColors([{ ...color, id: uid() }, ...colors]);
   }
 
   return (
